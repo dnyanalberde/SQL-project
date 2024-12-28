@@ -1,0 +1,46 @@
+order_id,invoice_id,return_id,quantity,reason,return_dt
+1Q,1,A,22,Bad Quality,21-Jun-13
+2W,2,B,33,Wrong Product,3-May-15
+3E,3,C,1,Damaged,31-May-15
+4R,4,D,2,Expired,27-Oct-15
+5T,5,E,4,,27-Oct-15
+6Y,6,F,,,28-Oct-15
+7U,7,G,2,,28-Oct-15
+8I,8,H,,Bad Quality,28-Oct-15
+9O,9,I,33,Wrong Product,1-Dec-15
+0P,10,J,5,Damaged,1-Dec-15
+1A,11,K,66,Expired,14-Dec-15
+2S,12,L,77,Bad Quality,14-Dec-15
+3D,13,M,9,Wrong Product,12-Jun-16
+4F,14,N,57,Damaged,13-Jun-16
+5G,15,O,12,Expired,14-Jun-16
+6H,16,P,,,21-Jun-16
+7J,17,Q,33,,21-Jun-16
+8K,18,R,44,Bad Quality,12-Jul-16
+9L,19,S,56,Wrong Product,5-Sep-16
+0L,20,T,78,Damaged,14-Sep-16
+1Z,21,U,11,Expired,19-Sep-16
+2X,22,V,89,Bad Quality,10-Oct-16
+3C,23,Q,0,Wrong Product,22-Oct-16
+4V,24,X,,Damaged,28-Oct-16
+5B,25,Y,,Expired,30-Nov-16
+6N,26,Z,,,30-Nov-16
+7M,27,AA,,,1-Dec-16
+1P,28,QQ,31,Bad Quality,1-Dec-16
+2O,29,WW,,Wrong Product,5-Jan-17
+3I,30,EE,2,Damaged,7-Jan-17
+4L,31,RR,3,Expired,19-Feb-17
+5K,32,TT,4,,20-Feb-17
+6J,33,YY,,,20-Feb-17
+7H,34,UU,5,Bad Quality,21-Feb-17
+8M,35,II,7,Wrong Product,21-Feb-17
+9N,36,OO,8,Damaged,7-Mar-17
+4B,37,PP,9,Expired,9-Mar-17
+3H,38,LL,43,Bad Quality,17-Mar-17
+3P,39,KK,12,Wrong Product,18-Mar-17
+6F,40,HH,22,Damaged,11-May-17
+2R,41,JJ,55,Expired,12-Aug-17
+3Q,42,DD,67,,12-Aug-17
+1I,43,FF,90,,5-Sep-17
+8V,44,SS,11,,1-Nov-17
+7Q,45,MM,45,,1-Nov-17

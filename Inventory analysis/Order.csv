@@ -1,0 +1,46 @@
+order_id,buyer_name,shipping_add,order_type,quantity
+1Q,Khalilah Holman,"726 Union St, Hudson, NY",Customer,44
+2W,Walmart,"802 North Ave, Pittsburgh, PA",Retailer,104
+3E,Verena Hopper,"612 Jefferson Ave, Scranton, PA",Customer,129
+4R,Target,"Via Notoriosa 1949, Ventimiglia,",Retailer,109
+5T,Target,"Via Dolorosa 69, Tellaro, ",Retailer,114
+6Y,Walmart,"1648 Anamika St, Cochin, Ker",Retailer,38
+7U,Jacinta Faulkner,"1592 Silverado St, Bangalore, Kar",Customer,61
+8I,Target,"Via Delle Capeletti 52, San Giminiano, ",Retailer,38
+9O,Corliss Mcneil,"Via Dello Croce 93, Roma, ",Customer,70
+0P,Brock Webb,"1598 Legend St, Bangalore, Kar",Customer,68
+1A,Melany Mcmahon,"Pfannenstilstr 13, Egg, ZH",Customer,83
+2S,Rogelio Kirby,"1617 Crackers St, Bangalore - India, Kar",Customer,93
+3D,Wallace Dillard,"1790 Grand Blvd, Schenectady, NY",Customer,141
+4F,Gia Boyle,"7 Ingelside Ln, White Plains, NY",Customer,133
+5G,Walmart,"18 Glenridge Rd, Schenectady, NY",Retailer,45
+6H,Ja Whitfield,"1801 Lititz Pike, Lancaster, PA",Customer,143
+7J,Jaime Lester,"101 E Olney Ave, Philadelphia, PA",Customer,61
+8K,Charlsie Lindsey,"36 W 34Th St, Erie, PA",Customer,98
+9L,Jannette Henry,"1007 Mount Royal Blvd, Pittsburgh, PA",Customer,57
+0L,Margart Mccall,"601 Market St, Philadelphia, PA",Customer,146
+1Z,Twanna Cleveland,"5122 Sinclair Ln, Baltimore, MD",Customer,146
+2X,Walmart,"680 Bel Air Rd, Bel Air, MD",Retailer,101
+3C,Walmart,"8004 Stansbury Rd, Baltimore, MD",Retailer,120
+4V,Denny Daniel,"10209 Yearling Dr, Rockville, MD",Customer,97
+5B,Avis Moore,"3000 Greenmount Ave, Baltimore, MD",Customer,73
+6N,Eden Burke,"1262 Vocke Rd, Cumberland, MD",Customer,92
+7M,Elisha Lloyd,"3314 Eastern Ave, Baltimore, MD",Customer,65
+1P,Samara Barnett,"11200 Scaggsville Rd, Laurel, MD",Customer,147
+2O,Nadia Sawyer,"2300 Harford Rd, Baltimore, MD",Customer,145
+3I,Melita Holcomb,"2 2Nd St # A, Ocean City, MD",Customer,63
+4L,Lurline Dennis,"Via Notoriosa 1943, Firenze, ",Customer,58
+5K,Stacia Rutledge,"Via Luminosa 162, Tellaro, ",Customer,67
+6J,Walmart,"Via Di Firenze 231, Tellaro,",Retailer,106
+7H,Gonzalo Stone,"Via Frenzy 6903, Tellaro, ",Customer,62
+8M,So Hardin,"Piazza Quattre Stagioni 4, San Giminiano, ",Customer,78
+9N,Lauren Rodriquez,"Via Notoriosa 1932, Tellaro,",Customer,146
+4B,Target,"2034 Sabrina Rd, Samutprakarn,",Retailer,45
+3H,Target,"Ruella Delle Spiriti, Milano,",Retailer,50
+3P,Target,"Via Delle Capeletti 52, San Giminiano, ",Retailer,119
+6F,Melissa Nichols,"Via Delli Capelli 2, San Giminiano,",Customer,77
+2R,Walmart,"1593 Silverado St, Bangalore, Kar",Retailer,120
+3Q,Elvera Benson,"1602 Sholay St, Chennai, Tam",Customer,62
+1I,Lanora Ray,"1607 Sangam Blvd, New Delhi,",Customer,97
+8V,Target,"514 W Superior St, Kokomo, IN",Retailer,33
+7Q,Jimmy Weber,"2515 Bloyd Ave, Indianapolis, IN",Customer,134
