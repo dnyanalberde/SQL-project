@@ -1,0 +1,67 @@
+--dataset: Search for sales table under iowa_liquor_sales in bigquery-public-data  in BigQuery resources
+
+--trend in liquor sales over the years covered by this dataset
+
+SELECT EXTRACT (YEAR FROM date) AS Year,
+ROUND (SUM(sale_dollars), 2)
+FROM `bigquery-public-data.iowa_liquor_sales.sales` 
+GROUP BY Year
+ORDER BY Year ASC
+LIMIT 1000;
+
+--most popular liquor brand sold
+SELECT item_description,
+SUM(sale_dollars) AS sale
+FROM `bigquery-public-data.iowa_liquor_sales.sales` 
+GROUP BY item_description
+ORDER BY sale DESC;
+
+--popularity change in brands over time
+WITH CTE AS (
+  SELECT EXTRACT (YEAR FROM date) AS Year,
+  item_description,
+ROUND (SUM(sale_dollars), 2) AS num_sold
+FROM `bigquery-public-data.iowa_liquor_sales.sales` 
+GROUP BY Year, item_description)
+SELECT *
+FROM (
+  SELECT *,
+  DENSE_RANK() OVER(PARTITION BY Year ORDER BY num_sold DESC) AS rank
+  FROM CTE) ranked
+  WHERE rank <= 10
+  ORDER BY Year, rank;
+
+  --seasonal patterns in sales
+  SELECT EXTRACT (MONTH FROM date) AS month,
+  SUM(sale_dollars) AS sales
+  FROM`bigquery-public-data.iowa_liquor_sales.sales`
+  GROUP BY month
+  ORDER BY month ASC;
+
+  --counties with highest sales
+  SELECT county,
+  SUM(sale_dollars) AS sales
+  FROM`bigquery-public-data.iowa_liquor_sales.sales`
+  GROUP BY county
+  ORDER BY sales DESC
+  LIMIT 10;
+
+  --Average price of liquor by category
+  SELECT category_name,
+  ROUND (AVG(sale_dollars/ bottles_sold), 2) AS avg_price
+  FROM`bigquery-public-data.iowa_liquor_sales.sales`
+  WHERE bottles_sold != 0
+  GROUP BY category_name
+  ORDER BY avg_price DESC;
+
+--brands having the highest profit margins for retailers
+SELECT item_description AS brand,
+ROUND(AVG(state_bottle_cost), 2) AS avg_cost,
+ROUND(AVG(state_bottle_retail), 2) AS avg_revenue,
+ROUND(AVG(state_bottle_retail) - AVG(state_bottle_cost), 2) AS profit,
+ROUND((AVG(state_bottle_retail) - AVG(state_bottle_cost))/AVG (state_bottle_retail)*100, 2) AS margin,
+FROM`bigquery-public-data.iowa_liquor_sales.sales`
+GROUP BY brand
+ORDER BY margin DESC
+LIMIT 10
+
